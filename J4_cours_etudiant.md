@@ -840,7 +840,7 @@ from helpers import TIMEOUT, login
 # tests/conftest.py : fixtures à ajouter
 @pytest.fixture(scope="session")
 def orga_headers(base_url):
-    """Organisateur du seed : sert uniquement à PRÉPARER des données de test."""
+    """Organisateur du seed : sert uniquement à PRÉPARER des données de test.ORGANIZAR QUE CREA EVENEMENTS LAS CREDECNCIALES SE AGREGA EN ENV"""
     return login(
         base_url,
         os.getenv("EF_ORGA_EMAIL", "orga@eventflow.test"),
